@@ -108,7 +108,7 @@ function movieinfo() {
   if (!error && response.statusCode === 200) {
 
   
-    var parsed = JSON.parse(body);
+     var parsed = JSON.parse(body);
 
     console.log("Title of the movie: " + parsed.Title);
     console.log("Released date: " + parsed.Year)
@@ -126,7 +126,6 @@ function movieinfo() {
 
 function doWhatItSays(){
 fs.readFile("random.txt", "utf-8", function read(err, data){
-  
   if(err){
 
    return console.log(err);
@@ -134,10 +133,9 @@ fs.readFile("random.txt", "utf-8", function read(err, data){
   }
 
 var dataArr = data.split(",");
-// for(var i = 1; i < dataArr.length; i++)
-songinfo(dataArr[1]);
-//console.log(dataArr);
-console.log(dataArr[1]);
+
+console.log(dataArr);
+
 });
 
 
