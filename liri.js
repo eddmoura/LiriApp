@@ -65,7 +65,7 @@ client.get('statuses/home_timeline', params, function(error, tweets, response) {
 };
 
 
-function songinfo(pineapple ) {
+function songinfo() {
   
 
   var spotify = new spotify2({
